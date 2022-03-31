@@ -1,5 +1,5 @@
 import express from "express";
-import { getHome, getAdd } from "../controller/contosController.js"
+import { getHome, getAdd, getRead } from "../controller/contosController.js"
 
 
 export const router = express.Router();
@@ -7,3 +7,5 @@ export const router = express.Router();
 
 router.get("/", getHome)
 router.get("/adicionar", getAdd)
+router.get("/detalhes/:id", getRead)
+// router.get("/deletar/:id", getDelete)
