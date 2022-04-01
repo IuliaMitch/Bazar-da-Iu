@@ -12,8 +12,13 @@
     <main>
         <section id="container">
             <h2>Detalhes do Conto</h2>
-            <img id="detalhes" src="<%= Conto.img_reference %>" alt="imagem-terror">
+            <div class="card-details">
             <h3><%= Conto.nome %></h3>
+            <img id="detalhes" src="<%= Conto.img_reference %>" alt="imagem-terror">
+            <div id="details">
+            <p><strong><%= Conto.descricao %></strong></p>
+        </div>
+        </div>
         </section>
     </main>    
     <%- include('./partials/footer') %>

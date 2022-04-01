@@ -32,6 +32,10 @@ export const contos = connection.define('contos', {
         allowNull: false,
 
 
+    },
+    desc_short: {
+        type: Sequelize.TEXT,
+        allowNull: false,
     }
 
 }, {
