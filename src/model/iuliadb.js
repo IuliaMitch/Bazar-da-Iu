@@ -41,8 +41,8 @@ export const contos = connection.define(
 
 
 const initTable = async () => {
-    await contos.sync()
-}
+    await contos.sync();
+}   
 
 
 initTable();
