@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <title>Criar</title>
+  </head>
+  <body>
+    <%- include('./partials/header') %>
+    <main>
+      <section id="container">
+        <div class="div-form">
+          <form action="/editar/<%= Conto.id %>" method="post" >
+              <legend>
+                Editar <%= Conto.nome %>
+              </legend>
+            <fieldset>
+              <input type="text" name="nome" value="<%= Conto.nome %>"/>
+              <label for="nome">Nome</label>
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="descricao" value="<%= Conto.descricao %>"/>
+              <label for="descricao">Conto</label>
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="ano" value="<%= Conto.ano %>"/>
+              <label for="ano">Ano</label>
+            </fieldset>
+
+            <fieldset>
+              <input type="url" name="img_reference" value="<%= Conto.img_reference %>"/>
+              <label for="img_reference">Imagem</label>
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="desc_short" value="<%= Conto.desc_short %>"/>
+              <label for="desc_short">Desc Curta</label>
+            </fieldset>
+            <div id="btn-container">
+                <button type="submit">Enviar</button>
+            </div>
+            
+          </form>
+        </div>
+      </section>
+    </main>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

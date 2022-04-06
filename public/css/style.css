@@ -4,14 +4,15 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
   --primary-color: rgb(37, 11, 61);
   --second-color: hsl(207, 19%, 9%);
 }
 
-::before, 
-::after{
-    box-sizing: border-box;
+::before,
+::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
   font-family: "Open sans", sans-serif;
   background-color: var(--primary-color);
 }
+
 section#nav-bar {
   color: white;
   background-color: black;
@@ -31,6 +33,7 @@ section#nav-bar nav ul {
   display: flex;
   justify-content: center;
 }
+
 section#nav-bar nav ul li {
   margin: 0.8rem;
   list-style: none;
@@ -104,8 +107,6 @@ div.card-details {
   box-shadow: 5px 5px 5px 5px #00000040;
 }
 
-
-
 div.card:hover {
   transform: scale(1.1);
 }
@@ -123,27 +124,26 @@ div.card a h4 {
 }
 
 div.card a p.card-body {
-    font-size: 7px
+  font-size: 7px;
 }
 
-.year-card{
-    margin: .2rem 0 0 0;
-    padding: 1rem;
-    background-color: black;
-    transition: transform .2s ease;
-    transform-origin: top;
-    transform: scaleX(0.2%);
-    border: 3px solid black;
-    border-radius: 1rem;
+.year-card {
+  margin: 0.2rem 0 0 0;
+  padding: 1rem;
+  background-color: black;
+  transition: transform 0.2s ease;
+  transform-origin: top;
+  transform: scaleX(0.2%);
+  border: 3px solid black;
+  border-radius: 1rem;
 }
 
 .year-card:hover {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-
 button.btn-delete {
-  margin-top:.1rem ;
+  margin-top: 0.1rem;
   border-radius: 0.5rem;
   cursor: pointer;
   background-color: white;
@@ -162,10 +162,11 @@ div.card div#name h3 {
   margin: 0 1rem 0 1rem;
   background-color: white;
   color: black;
-  padding: .1rem;
+  padding: 0.1rem;
   border-radius: 1rem;
   border: 1px solid black;
 }
+
 div.card div#name h3:hover {
   border: 1px solid white;
   background-color: black;
@@ -176,14 +177,10 @@ div.card-contents {
   height: 80%;
   padding: 0.3rem;
   border-radius: 1rem;
-  background: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(20 0% 0% / 0.3) 30%,
-    rgba(0, 0, 0, 0.712) 
-  );
+  background: linear-gradient(hsl(0 0% 0% / 0),
+      hsl(20 0% 0% / 0.3) 30%,
+      rgba(0, 0, 0, 0.712));
 }
-
-
 
 section#container {
   height: 100%;
@@ -217,6 +214,86 @@ section#container div.card-details img#detalhes {
   border-radius: 2rem;
 }
 
+/* Formulário */
+
+div.div-form {
+  padding: 1.5rem;
+  background-color: var(--second-color);
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  width: 60%;
+  height: 100%;
+  border: 3px solid white;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px 5px #00000040;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 .3rem 0 ;
+}
+form legend {
+  margin: -1.5rem .3rem .3rem .3rem;
+  background-color: var(--primary-color);
+  width: 105%;
+  padding: .5rem .3rem .8rem .3rem;
+  border-radius: .7rem;
+  color: white;
+  box-shadow: 5px 5px 5px 5px #00000040;
+}
+
+form fieldset {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 1rem .3rem .3rem .3rem;
+  width: 60%;
+  box-shadow: 5px 5px 5px 5px #00000040;
+}
+form fieldset label {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  padding: .4rem;
+  background-color: rgba(37, 11, 61, 0.582);
+}
+
+form fieldset input {
+  outline: none;
+  padding: .5rem;
+  font-size: .8rem;
+}
+
+#btn-container {
+  margin-top: 0.9rem;
+  display: flex;
+  justify-content: center;
+}
+
+#btn-container button {
+  background-color: rgba(37, 11, 61, 0.582);
+  color: white;
+  padding: 0.3rem;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 0.2rem;
+  box-shadow: 3px 3px 3px 3px #00000020;
+  transition: all .1s ease-in-out;
+}
+
+#btn-container button:hover {
+  background-color: white;
+  color: rgb(37, 11, 61);
+  border-color: rgb(37, 11, 61);
+}
+
+/* Footer */
+
 footer {
   color: white;
   font-size: 1.4rem;
@@ -229,9 +306,11 @@ footer {
   height: 100px;
   padding: 1rem;
 }
+
 footer h4 {
   margin: 0 1rem 1rem 1rem;
 }
+
 footer a {
   color: black;
   background-color: white;
@@ -241,6 +320,7 @@ footer a {
   margin-top: 1rem;
   text-decoration: none;
 }
+
 footer a:hover {
   background-color: black;
   color: white;

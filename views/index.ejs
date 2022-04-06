@@ -29,9 +29,15 @@
             <p class="card-body"><%= element.desc_short %></p>
           </div>
           <div id="bottons">  
+            <% if(button == 0) { %>
             <a href="/deletar/<%= element.id %>">
             <button type="button" class="btn-delete">Delete</button>
     </a>
+    <% }else { %>
+      <a href="/editar/<%= element.id %>">
+        <button type="button" class="btn-delete">Update</button>
+</a>
+<% } %>
     </div>
             
           </a>
